@@ -5,34 +5,45 @@
     <meta charset="UTF-8">
     <style>
     body {
-        font-family: Arial
+        font-family: 'Times New Roman', Times, serif
     }
     .contenedor {
         width: 80%;
         margin: auto;
-        background-color: lightgray;
+        background-color: yellow;
     }
     h1 {
         text-align: center;
+        background-color: rgb(82, 3, 58);
+        color: pink;
+    }
+    form{
+        background-color: rgb(235, 60, 182);
+        color: pink;
+        padding: 20px;
+        border-radius: 500px;
+    }
+    ul {
+        list-style-type: circle;
+        padding-left: 50px;
     }
     </style>
 </head>
 <body>
     <div class="contenedor">
         <h1>Bienvenidos a mi página<h1>
-        <p>Este es un párrafo sin cerrar
-        <img src="imagen.jpg" alt="Imagen de ejemplo">
-
+        <p>Este es un párrafo sin cerrar</p>
+        <img src="a-hat-in-time-hat-kid.gif" alt="Hat Kid Girando" width="10%" height="10%">
         <ul>
-            <li>Elemento 1
+            <li>Elemento 1</li>
             <li>Elemento 2</li>
-            <li>Elemento 3
+            <li>Elemento 3</li>
         </ul>
 
         <form action="procesar.php" method="POST">
-            Nombre: <input type="text" name="nombre">
+            Nombre: <input type="text" name="nombre" placeholder="Escribe tu nombre">
             <br>
-            Correo: <input type="email" name="correo">
+            Correo: <input type="email" name="correo" placeholder="Escribe tu correo">
             <br>
             <input type="submit" value="Enviar">
         </form>
